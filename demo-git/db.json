@@ -1,0 +1,19 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "Trần Thanh Phương",
+      "age": "19"
+    },
+    {
+      "id": 2,
+      "name": "Võ Trung Trọng",
+      "age": "18"
+    },
+    {
+      "id": 3,
+      "name": "Doãn Mạnh Thắng",
+      "age": "25"
+    }
+  ]
+}
