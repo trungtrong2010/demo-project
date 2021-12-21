@@ -6,7 +6,7 @@ import {CustomerDetailComponent} from './customer/customer-detail/customer-detai
 
 const routes: Routes = [
   {path: 'list', component: CustomerListComponent},
-  {path: 'detail', component: CustomerDetailComponent},
+  {path: 'detail/:id', component: CustomerDetailComponent},
 ];
 
 @NgModule({
