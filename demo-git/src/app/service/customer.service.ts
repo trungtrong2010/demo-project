@@ -10,11 +10,16 @@ export class CustomerService {
 
   URL_API: string;
 
-  constructor(private http: HttpClient) {
+  constructor(private httpClient: HttpClient) {
     this.URL_API = 'http://localhost:3000/customer';
   }
 
-  getCustomerById(id: any): Observable<ICustomer>{
-    return this.http.get<ICustomer>(this.URL_API + '/' + id);
+  getCustomerById(id: any): Observable<ICustomer> {
+    return this.httpClient.get<ICustomer>(this.URL_API + '/' + id);
+  }
+
+  getAllCustomer(): Observable<ICustomer[]>{
+    return this.httpClient.get<ICustomer[]>(this.URL_API);
   }
 }
+
